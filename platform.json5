@@ -1,0 +1,62 @@
+{
+  "id": "platform-template",
+  "title": "Plarform template",
+  "notes": "Some text content here",
+  "aux": {},
+  "settings": {
+	"useSimulationBackend": false,
+	"dropDatabaseAtStart": true,
+    "irtAnnotation": {
+      "referencePath": "aux.db",
+      "databases": {
+        "pmid": {"prefix": "https://www.ncbi.nlm.nih.gov/pubmed/", "title": "Pubmed"},
+        "doi": {"prefix": "https://doi.org/", "title": "Doi"},
+        "patent": {"prefix": "https://patents.google.com/patent/", "title": "Patent"}
+      }
+    }
+  },
+  "imports": [
+    {
+      "ignore": true,
+      "kind": "SlvImport",
+      "file": "model.slv",
+      "defaultItem": {},
+      "defaultPath": "",
+      "ignoreOdeVariables": true,
+      "useOldStyleReactionId": false,
+      "addSlvFunctions": false
+    },
+    {
+      "ignore": true,
+      "kind": "DatImport",
+      "file": "data0.dat",
+      "defaultItem": {},
+      "defaultPath": "",
+      "absoluteError": true
+    },
+    {
+      "ignore": false,
+      "kind": "Json5Import",
+      "file": "src/exports.json5",
+      "defaultItem": {},
+      "defaultPath": ""
+    },
+    {
+      "ignore": true,
+      "kind": "XlsxImport",
+      "file": "src/tables.xlsx",
+      "defaultItem": {},
+      "defaultPath": "",
+      "sheets": [
+        {"sheetNum": 1,  "class": "Compartment", "omitRows": 3, "omitCols": ["on", "", "kind", "constant", "expr", "units"]},
+        {"sheetNum": 1,  "class": "Variable", "omitRows": 3, "omitCols": ["on", "", "title", "notes", "aux"]},
+        {"sheetNum": 2, "class": "Species", "omitRows": 3, "omitCols": ["on", "", "kind", "constant", "expr", "units"]},
+        {"sheetNum": 2, "class": "Variable", "omitRows": 3, "omitCols": ["on", "", "title", "notes", "aux"]},
+        {"sheetNum": 3,  "class": "Reaction", "omitRows": 3, "omitCols": ["on", "", "kind", "expr", "units"]},
+        {"sheetNum": 3,  "class": "Variable", "omitRows": 3, "omitCols": ["on", "", "_reactants", "title", "notes", "_modifiers", "aux"]},
+        {"sheetNum": 4, "class": "Variable", "omitRows": 3, "omitCols": ["on", ""]},
+        {"sheetNum": 5, "class": "Variable", "omitRows": 3, "omitCols": ["on", ""]}
+      ]
+    }
+  ]
+}

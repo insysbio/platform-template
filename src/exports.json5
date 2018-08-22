@@ -1,0 +1,56 @@
+[
+  {
+    id: "sbml",
+    ignore: true,
+    class: "Export",
+    kind: "SbmlExport",
+    sceneRefs: ["default"]
+  },
+  {
+    id: "validator",
+    ignore: true,
+    class: "Export",
+    kind: "ValidatorExport",
+    sceneRefs: ["default"]
+  },
+  {
+    id: "dbsolve",
+    ignore: true,
+    class: "Export",
+    kind: "DbsExport",
+    sceneRefs: ["default"]
+  },
+  {
+    id: "rxode",
+    ignore: true,
+    class: "Export",
+    kind: "RxodeExport",
+    sceneRefs: ["default"]
+  },
+  {
+    id: "julia",
+    ignore: true,
+    class: "Export",
+    kind: "JuliaExport",
+    sceneRefs: ["default"]
+  },
+  {
+    id: "simbio",
+    ignore: true,
+    class: "Export",
+    kind: "SimbiologyExport",
+    sceneRefs: ["default"]
+  },
+  {
+    id: "yaml",
+    ignore: true,
+    class: "Export",
+    kind: "YamlExport"
+  },
+  {
+    id: "json",
+    ignore: false,
+    class: "Export",
+    kind: "JsonExport"
+  }
+]
