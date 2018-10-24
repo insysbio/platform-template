@@ -28,6 +28,13 @@
     sceneRefs: ["default"]
   },
   {
+    id: "mrgsolve",
+    ignore: true,
+    class: "Export",
+    kind: "MrgsolveExport",
+    sceneRefs: ["default"]
+  },
+  {
     id: "julia",
     ignore: true,
     class: "Export",

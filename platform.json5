@@ -21,7 +21,7 @@
       "kind": "SlvImport",
       "file": "model.slv",
       "defaultItem": {},
-      "defaultPath": "",
+      "defaultPath": "/",
       "ignoreOdeVariables": true,
       "useOldStyleReactionId": false,
       "addSlvFunctions": false
@@ -31,7 +31,7 @@
       "kind": "DatImport",
       "file": "data0.dat",
       "defaultItem": {},
-      "defaultPath": "",
+      "defaultPath": "/",
       "absoluteError": true
     },
     {
@@ -39,14 +39,14 @@
       "kind": "Json5Import",
       "file": "src/exports.json5",
       "defaultItem": {},
-      "defaultPath": ""
+      "defaultPath": "/"
     },
     {
       "ignore": true,
       "kind": "XlsxImport",
       "file": "src/tables.xlsx",
       "defaultItem": {},
-      "defaultPath": "",
+      "defaultPath": "/",
       "sheets": [
         {"sheetNum": 1,  "class": "Compartment", "omitRows": 3, "omitCols": ["on", "", "kind", "constant", "expr", "units"]},
         {"sheetNum": 1,  "class": "Variable", "omitRows": 3, "omitCols": ["on", "", "title", "notes", "aux"]},
