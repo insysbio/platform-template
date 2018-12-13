@@ -19,7 +19,7 @@
     {
       "ignore": true,
       "kind": "SlvImport",
-      "file": "model.slv",
+      "file": "src/model.slv",
       "defaultItem": {},
       "defaultPath": "/",
       "ignoreOdeVariables": true,
@@ -29,7 +29,7 @@
     {
       "ignore": true,
       "kind": "DatImport",
-      "file": "data0.dat",
+      "file": "src/data0.dat",
       "defaultItem": {},
       "defaultPath": "/",
       "absoluteError": true
